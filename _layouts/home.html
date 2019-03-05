@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include sidebar.html %}
+
+    {% include slideshow.html %}
+
+	  <div class="details">
+	  {% assign post=site.posts.first %}
+	  
+	  <ul class="post-list">
+          <li>
+           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h2>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </h2>
+          </li>
+        </ul>
+	{% for node in pages_list %}
+      {% if node.fav %}
+	  <a href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
+	    {% endif %}
+    {% endfor %}
+	  </div>
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+<div class="sidebar">
+  <!-- Colour fill on left side-->
+  <div class="sidebar one">
+  </div>
+  <!--Curved bar with list of links-->
+  <div class="sidebar two"> 
+    <nav class="contents">	
+     <ul class="links">  		  
+	  <li class="sidebar-nav-item {% if page.url == '/' %} active{% endif %}"><a href="{{ site.baseurl }}/">Home</a></li>
+    {% assign pages_list = site.pages | sort:"nav_order" %}
+    {% for node in pages_list %}
+      {% if node.title != null and node.nav_order and node.category=="nav" %}
+          <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}"><a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+      {% endif %}
+    {% endfor %}	  
+      </ul>
+    </nav>
+  </div>
+</div>

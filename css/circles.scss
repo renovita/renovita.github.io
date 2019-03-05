@@ -1,0 +1,19 @@
+---
+---
+
+// Define defaults for each variable.
+
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+
+$color-one:     #C799FF;
+$color-two:     #8F32FF;
+$color-three:   #6424B3;
+$color-four:    #000000;
+$color-five:    #FFFFFF;
+
+// Import partials.
+@import
+  "circles/base",
+  "circles/layout"
+;
