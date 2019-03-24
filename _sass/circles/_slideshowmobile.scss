@@ -1,101 +1,4 @@
-/**
- * Sidebar
- */
-
-.sidebar{
-    position:fixed;
-	
-	top:0px;
-	left:0px;
-	height:100vh;
-	width: 20vh;
-	
-	float:left;
-	margin:none;
-	
-	z-index:200;
-}
-
-.one{
-    border-top-right-radius: 70vh 70vh;
-    border-bottom-right-radius: 70vh 70vh;
-  
-	height: 140vh;
-	top: -20vh;
-	width: 140vh;
-	bottom: -20vh;
-	left:-130vh;
-	
-	float:none;
-	
-	background-color: $color-one;
-	
-	z-index: 5;
-}
-
-.two{
-	border-top-right-radius: 80vh 80vh;
-    border-bottom-right-radius: 80vh 80vh;
-  
-	height: 160vh;
-	top: -30vh;
-	width: 160vh;
-	bottom: -30vh;
-	left: -140vh;
-	
-    background-color: $color-two;
-
-	float:none;
-
-    z-index: 4;
-}
-
-.contents{
-position:relative;
-top:50vh;
-/*background-color:$color-three;*/
-width:40vh;
-left:142vh;
-
-}
-
-.sidebar-nav-item{
-position:relative;
-background-color:$color-four;
-vertical-align:middle;
-padding:0px;
-margin:10px;
-}
-
-.sidebar-nav-item:nth-of-type(1) {
-
-}
-
-.sidebar-nav-item:nth-of-type(2) {
-left:3vh;
-}
-
-.sidebar-nav-item:nth-of-type(3) {
-left: 4vh;
-}
-
-.sidebar-nav-item:nth-of-type(4) {
-left: 5vh;
-}
-
-.sidebar-nav-item:hover{
-background-color:$color-two;
-
-}
-
-.active{
-background-color:$color-one;
-}
-
-/**
- * Default
- */
-
+@media screen and (max-width: 1080px) {
 
 .bod{
 	float: left;
@@ -104,7 +7,8 @@ background-color:$color-one;
 	
 	position:relative;
 	
-	left:21vh;
+	left:0vh;
+    top:5vh;
 	
 	align-items:center;
 	vertical-align:middle;
@@ -117,8 +21,8 @@ background-color:$color-one;
 }
 
 .outside{
-    width:100vh;
-	height:100vh;
+    width:100vw;
+	height:100vw;
 
 	background-color:$color-two;
 }
@@ -126,13 +30,13 @@ background-color:$color-one;
 .inside{
     display:table-cell;
 	/*display:inline-block;*/
-	width:90vh;
-	height:90vh;
+	width:90vw;
+	height:90vw;
 	background-color:$color-one;
 	border-radius:100%;
 	position:absolute;
-	top:5vh;
-	left:5vh;
+	top:5vw;
+	left:5vw;
 	/*transform: translateX(-50%) translateY(-50%);*/
 	margin:none;
 	padding:5px;
@@ -143,11 +47,11 @@ background-color:$color-one;
 }
 
 .cont{
-top:1px;
+top:10vh;
 position:relative;
-left:21vh;
+left:0vh;
 background-color:$color-two;
-width:100vh;
+width:100vw;
 margin:none;
 padding:auto;
 float:left;
@@ -281,4 +185,7 @@ float:left;
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
 }

@@ -1,0 +1,93 @@
+/**
+ * Sidebar
+ */
+
+.sidebar{
+    position:fixed;
+	
+	top:0px;
+	left:0px;
+	height:100vh;
+	width: 20vh;
+	
+	float:left;
+	margin:none;
+	
+	z-index:200;
+}
+
+.one{
+    border-top-right-radius: 70vh 70vh;
+    border-bottom-right-radius: 70vh 70vh;
+  
+	height: 140vh;
+	top: -20vh;
+	width: 140vh;
+	bottom: -20vh;
+	left:-130vh;
+	
+	float:none;
+	
+	background-color: $color-one;
+	
+	z-index: 5;
+}
+
+.two{
+	border-top-right-radius: 80vh 80vh;
+    border-bottom-right-radius: 80vh 80vh;
+  
+	height: 160vh;
+	top: -30vh;
+	width: 160vh;
+	bottom: -30vh;
+	left: -140vh;
+	
+    background-color: $color-two;
+
+	float:none;
+
+    z-index: 4;
+}
+
+.contents{
+position:relative;
+top:50vh;
+/*background-color:$color-three;*/
+width:40vh;
+left:142vh;
+
+}
+
+.sidebar-nav-item{
+position:relative;
+background-color:$color-four;
+vertical-align:middle;
+padding:0px;
+margin:10px;
+}
+
+.sidebar-nav-item:nth-of-type(1) {
+
+}
+
+.sidebar-nav-item:nth-of-type(2) {
+left:3vh;
+}
+
+.sidebar-nav-item:nth-of-type(3) {
+left: 4vh;
+}
+
+.sidebar-nav-item:nth-of-type(4) {
+left: 5vh;
+}
+
+.sidebar-nav-item:hover{
+background-color:$color-two;
+
+}
+
+.active{
+background-color:$color-one;
+}
