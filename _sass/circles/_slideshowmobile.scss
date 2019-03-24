@@ -52,7 +52,7 @@ position:relative;
 left:0vh;
 background-color:$color-two;
 width:100vw;
-margin:none;
+margin:5px;
 padding:auto;
 float:left;
 }
@@ -64,7 +64,7 @@ float:left;
 	left:22vh;
 	height:99vh;
 	margin:5px;
-	top:1px;
+	top:1vh;
 	padding:auto;
 	background-color:$color-one;
 	position:relative;
@@ -76,7 +76,12 @@ float:left;
 }
 
 .content{
-    width:50vh;
+   // width:50vh;
+    //align:middle;
+    
+    position: relative;
+    left: 15vw;
+    width:60vw;
     align:middle;
 }
 
