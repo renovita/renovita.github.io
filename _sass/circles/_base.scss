@@ -13,12 +13,27 @@ ul{
     padding: 0;
 }
 
+
+
+
+
+
 a{
 display:block;
 padding:4vh;
 align:centre;
-text-align:center;
+text-align:left;
 }
+
+@media screen and (max-width: 1080px) {
+    a{
+    text-align:center;
+    }
+}
+
+
+
+
 
 img{
     padding:10px;
