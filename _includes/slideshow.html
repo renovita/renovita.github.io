@@ -1,15 +1,15 @@
 <div class="bod outside">
   <span class="inside">
-    </br>
+    <br>
     <div class="Header">
     {{page.title}}
     {% if page.layout=="home" %}
     <!--Home-->
     {% endif %}
-    </br>
+    <br>
     <img src="{{page.icon}}">
     </div>
-    </br>
+    <br>
     <div class=content>
     {{content}}
     </div>
@@ -18,7 +18,7 @@
     {% assign pages_list = site.pages %}
      {% for node in pages_list %}
      {% if page.layout=="home" %}
-     <br \>
+     <br>
       {% if node.title != null%}
         {% if node.icon %}
         {% if node.category!= "url" %}
