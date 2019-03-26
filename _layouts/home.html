@@ -18,7 +18,7 @@
         <h1>Projects</h1>
 	{% for node in pages_list %}
       {% if node.fav %}
-	  <a href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
+	  <a href="{{ site.baseurl }}{{ node.url }}" class="menu">{{node.title}}</a>
 	    {% endif %}
     {% endfor %}
 	  </div>

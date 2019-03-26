@@ -4,17 +4,29 @@
   <body>
     {% include sidebar.html %}
     {% include slideshow.html %}
+    
 	  <div class="details">
 	  {% assign pages_list = site.pages %}
 	    {% for node in pages_list %}
 		{% if node.title != null and node.category==page.title %}
-		<a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+		<a href="{{ site.baseurl }}{{ node.url }}"  class="menu">{{ node.title }}</a>
 		{% elsif node.category==page.category%}
             {% if node.category != "nav" %}
-            <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            <a href="{{ site.baseurl }}{{ node.url }}"  class="menu" >{{ node.title }}</a>
             {% endif %}
 		{% endif %}
     {% endfor %}
 	  </div>
+	  
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
