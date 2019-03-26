@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-
   {% include head.html %}
-
   <body>
     {% include sidebar.html %}
-
     {% include slideshow.html %}
-
 	  <div class="details">
 	  {% assign post=site.posts.first %}
-	  
 	  <ul class="post-list">
           <li>
            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
@@ -20,6 +15,7 @@
               </h2>
           </li>
         </ul>
+        <h1>Projects</h1>
 	{% for node in pages_list %}
       {% if node.fav %}
 	  <a href="{{ site.baseurl }}{{ node.url }}">{{node.title}}</a>
@@ -27,5 +23,4 @@
     {% endfor %}
 	  </div>
   </body>
-
 </html>
