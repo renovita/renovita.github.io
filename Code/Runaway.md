@@ -9,4 +9,4 @@ icon: /assets/Code/player.png
 nav_order: 1
 fav: on
 ---
-[Runaway](https://github.com/renovita/runaway) is a simple arcade-style python game where the objective is to escape being shot until the two emeny fighters have shot each other to death - you can't fight back!
+[Runaway](https://gitlab.com/renovita/runaway-game) is a simple arcade-style python game where the objective is to escape being shot until the two emeny fighters have shot each other to death - you can't fight back!
