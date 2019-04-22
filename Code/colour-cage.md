@@ -3,10 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-title: 'SNIPPET: Digikam'
+title: 'ALPHA: colour-cage'
 category: Code
 # icon: /assets/Code/player.png
 nav_order: 1
 fav: on
 ---
-[DigikamBG](https://gitlab.com/snippets/1826329) is a quick script to use photographs from Digikam as background in KDE.
+[Colour Cage](https://gitlab.com/renovita/colour-cage-unity) is my foray into making games with Unity. It is quite a simple arcade game where the objective is to stop the ball from escaping.
