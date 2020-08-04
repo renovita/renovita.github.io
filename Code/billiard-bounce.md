@@ -3,10 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-title: 'BETA: colour-cage'
+title: 'ALPHA: Billiard bounce'
 category: Code
-# icon: /assets/Code/player.png
+# icon: /assets/Code/billiard.png
 nav_order: 1
 fav: on
 ---
-[Colour Cage](https://gitlab.com/renovita/colourcage) is my foray into making games with Unity. It is quite a simple arcade game where the objective is to stop the ball from escaping.
+[billiard bounce](https://gitlab.com/renovita/billiardbounce) is my another simple arcade game where balls must be kept away from the hole by swiping

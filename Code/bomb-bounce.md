@@ -3,10 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-title: 'BETA: colour-cage'
+title: 'ALPHA: Bombbounce'
 category: Code
-# icon: /assets/Code/player.png
+# icon: /assets/Code/bombbounce.png
 nav_order: 1
 fav: on
 ---
-[Colour Cage](https://gitlab.com/renovita/colourcage) is my foray into making games with Unity. It is quite a simple arcade game where the objective is to stop the ball from escaping.
+[Bomb bounce](https://gitlab.com/renovita/bombbounce) is a basic game where tapping the screen gives opints, but bombs regularly appear and must be avoided.
