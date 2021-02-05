@@ -2,8 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {% include head.html %}
   <body>
-    {% include sidebar.html %}
-    {% include slideshow.html %}
+    {% include header.html %}
 	  <div class="details">
 	  {% assign post=site.posts.first %}
 	  <ul class="post-list">
@@ -16,11 +15,8 @@
           </li>
         </ul>
         <h1>Projects</h1>
-	{% for node in pages_list %}
-      {% if node.fav %}
-	  <a href="{{ site.baseurl }}{{ node.url }}" class="menu">{{node.title}}</a>
-	    {% endif %}
-    {% endfor %}
+	{% include projectlist.html %}
+
 	  </div>
   </body>
 </html>
