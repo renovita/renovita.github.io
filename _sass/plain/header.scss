@@ -1,12 +1,25 @@
-li {
-	display:inline;
+.links{
+	margin:0px;
+	padding:30px;
 }
 
-
-.header {
-	background-color:grey;
+.header-nav-item {
+	display:inline;
+	align:center;
 	margin:0px;
 	padding:50px;
 }
 
+.header {
+	background-color:grey;
+	margin:0px;
+}
 
+.menu {
+	padding:30px;
+	margin:auto;
+}
+
+.menu:hover {
+	background-color: #111;
+}

@@ -14,5 +14,9 @@ $color-five:    #FFFFFF;
 
 // Import partials.
 @import
-  "plain/header"
+  "plain/header",
+  "plain/body",
+  "plain/projectlist",
+  "plain/blog",
+  "plain/pagecontent"
 ;
