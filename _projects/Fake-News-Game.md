@@ -3,7 +3,7 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
-title: Dissertation&#58; Fake News Game
+title: "Dissertation: Fake News Game"
 category: Code
 icon: /assets/Code/news.png
 nav_order: 1
