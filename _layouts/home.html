@@ -2,25 +2,23 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {% include head.html %}
   <body>
-    {% include sidebar.html %}
-    {% include slideshow.html %}
-	  <div class="details">
+    {% include header.html %}
+
+
+    	<div class="post_list">
+		<h3>Latest blog post</h3>
 	  {% assign post=site.posts.first %}
 	  <ul class="post-list">
           <li>
            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
               <h2>
-                <a class="menu" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
               </h2>
           </li>
         </ul>
-        <h1>Projects</h1>
-	{% for node in pages_list %}
-      {% if node.fav %}
-	  <a href="{{ site.baseurl }}{{ node.url }}" class="menu">{{node.title}}</a>
-	    {% endif %}
-    {% endfor %}
-	  </div>
+	</div>
+	{% include projectlist.html %}
+
   </body>
 </html>

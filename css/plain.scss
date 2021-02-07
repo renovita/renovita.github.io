@@ -14,11 +14,9 @@ $color-five:    #FFFFFF;
 
 // Import partials.
 @import
-  "circles/base",
-  "circles/slideshow",
-  "circles/slideshowmobile",
-  "circles/sidebar",
-  "circles/sidebarmobile",
-  "circles/sidelist",
-  "circles/sidelistmobile"
+  "plain/header",
+  "plain/body",
+  "plain/projectlist",
+  "plain/blog",
+  "plain/pagecontent"
 ;

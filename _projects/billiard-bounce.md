@@ -9,4 +9,4 @@ category: Code
 nav_order: 1
 fav: on
 ---
-[billiard bounce](https://gitlab.com/renovita/billiardbounce) is my another simple arcade game where balls must be kept away from the hole by swiping
+[Billiard Bounce](https://gitlab.com/renovita/billiardbounce) is my another simple arcade game where balls must be kept away from the hole by swiping

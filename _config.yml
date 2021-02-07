@@ -18,6 +18,11 @@ url: "" # the base hostname & protocol for your site
 gitlab_username:  renovita
 linkedin: renovita
 
+collections:
+  projects:
+    output: true
+
+
 # Build settings
 markdown: kramdown
 exclude: ["README.md"]
