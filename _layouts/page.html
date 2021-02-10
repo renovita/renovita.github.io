@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <body>
-	<div class="flex-container">
-		{% include head.html %}
-    		{% include header.html %}
-		<div class="body-container">
-	    		<div class="page_content">
-		    		<img src={{ page.icon }}>
-    				{{ content }}
-    			</div>
-		</div>
-	</div>	
+	{% include head.html %}
+    	{% include header.html %}
+	<div class="body-container">
+    		<div class="page_content">
+	    		<img src={{ page.icon }}>
+    			{{ content }}
+    		</div>
+	</div>
   </body>
 </html>
