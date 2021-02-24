@@ -1,14 +1,9 @@
-<div class="header">
-    <nav class="contents">	
-     <ul class="links">  		  
-	  <li class="header-nav-item {% if page.url == '/' %} active{% endif %}"><a href="{{ site.baseurl }}/"  class="menu" >Home</a></li>
-    {% assign pages_list = site.pages | sort:"nav_order" %}
-    {% for node in pages_list %}
-      {% if node.title != null and node.nav_order and node.category=="nav" %}
-      <li class="header-nav-item{% if page.url == node.url %} active{% endif %}"><a href="{{ site.baseurl }}{{ node.url }}" class="menu" >{{ node.title }}</a></li>
-      {% endif %}
-    {% endfor %}	  
-      </ul>
-    </nav>
-  </div>
-</div>
+<nav class="contents">	
+	<div class="header-nav-item {% if page.url == '/' %} active{% endif %}"><a href="{{ site.baseurl }}/"  class="menu" >Home</a></div>
+	{% assign pages_list = site.pages | sort:"nav_order" %}
+	{% for node in pages_list %}
+		{% if node.title != null and node.nav_order and node.category=="nav" %}
+			<div class="header-nav-item{% if page.url == node.url %} active{% endif %}"><a href="{{ site.baseurl }}{{ node.url }}" class="menu" >{{ node.title }}</a></div>
+      		{% endif %}
+	{% endfor %}	  
+</nav>
